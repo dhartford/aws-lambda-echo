@@ -6,4 +6,6 @@ Unfortunately, how to set this up to be useful within AWS is the current challen
 
 The AWS API Gateway is one approach, but *only* if the payload is *always JSON*, the gateway will reject non-JSON payloads.
 
+source: http://docs.aws.amazon.com/lambda/latest/dg/use-cases.html
+
 Only potential idea left is to create a small ec2 instance and evaluate socket-activation technique to Invoke the AWS lambda via socket-activation code (then you can use ELB in front of the EC2).
